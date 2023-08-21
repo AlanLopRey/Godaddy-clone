@@ -1,3 +1,16 @@
+:root {
+  /*Colors*/
+  --gray-black: rgb(43, 43, 43);
+  --darker-black: rgb(17, 17, 17);
+  --backgrund-white: rgb(255, 255, 255);
+  --light-blue: rgb(216, 239, 239);
+
+  /*Fonts*/
+  --font-header: "Abhaya Libre", serif;
+  --font-header-two: "DM Serif Display", serif;
+  --font-body: "Work Sans", sans-serif;
+}
+
 /* RESET */
 *,
 *::before,
@@ -55,4 +68,70 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+body {
+  background-color: var(--backgrund-white);
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+}
+.carousel-rvw {
+  width: 100vw;
+}
+
+.carousel-rvw__img {
+  width: 100vw;
+  max-width: 50vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.8rem;
+  background-color: var(--gray-black);
+  color: var(--backgrund-white);
+}
+
+.hamburger {
+  width: 4rem;
+}
+
+.hamburger__logo {
+  position: relative;
+  left: 4rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.icons__svg {
+  width: 30px;
+}
+
+.header {
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.header__inpt {
+  height: 5.2rem;
+}
+
+.header__inpt--btn {
+  width: 5.2rem;
+  height: 5.2rem;
 }

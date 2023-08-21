@@ -2,25 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&family=DM+Serif+Display&family=Work+Sans:wght@100;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
     <main class="main">
       <nav class="nav">
-        <div class="hamburger"></div>
-        <img src="" alt="logo" />
+        <div class="hamburger">
+          <img class="hamburger__logo" src="" alt="logo" />
+        </div>
+
         <div class="icons">
-          <img src="" alt="telefono" />
-          <img src="" alt="FAQ" />
-          <img src="" alt="Person" />
-          <img src="" alt="buy" />
+          <img
+            class="icons__svg"
+            src="./assets/svgs/svg-phone.svg"
+            alt="telefono"
+          />
+          <img
+            class="icons__svg"
+            src="./assets/svgs/svg-questions.svg"
+            alt="FAQ"
+          />
+          <img
+            class="icons__svg"
+            src="./assets/svgs/svg-user-logo.svg"
+            alt="Person"
+          />
+          <img
+            class="icons__svg"
+            src="./assets/svgs/svg-carrito-de-compras.svg"
+            alt="buy"
+          />
         </div>
       </nav>
 
       <!--* header -->
       <header class="header">
-        <input type="search" name="dominio" id="" />
+        <div class="input-wrapper">
+          <input class="header__inpt" type="search" name="dominio" id="" />
+          <button class="header__inpt--btn">
+            <img src="./assets/svgs/svg-search-logo.svg" alt="" />
+          </button>
+        </div>
 
         <!--? hero img -->
         <div class="hero">
@@ -87,18 +117,521 @@
         </h2>
 
         <div class="carousel">
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
-          <div class="carousel-rvw"></div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/1st-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/2nd.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/3er-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/4th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/5th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/6th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/7th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/8th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/9th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+          <div class="carousel-rvw">
+            <img
+              src="./assets/carousel-imgs/10th-rvw.png"
+              alt=""
+              class="carousel-rvw__img"
+            />
+          </div>
+        </div>
+        <div class="trustpilot">
+          <img src="./assets/svgs/svg-trustpilot.svg" alt="trustpilot" />
+          <div class="trustpilot__start">
+            <img
+              src="./assets/svgs/svg-start.svg"
+              alt=""
+              class="trustpilot__start--img"
+            />
+            <img
+              src="./assets/svgs/svg-start.svg"
+              alt=""
+              class="trustpilot__start--img"
+            />
+            <img
+              src="./assets/svgs/svg-start.svg"
+              alt=""
+              class="trustpilot__start--img"
+            />
+            <img
+              src="./assets/svgs/svg-start.svg"
+              alt=""
+              class="trustpilot__start--img"
+            />
+            <img
+              src="./assets/svgs/svg-star-middle.svg"
+              alt=""
+              class="trustpilot__start--img"
+            />
+          </div>
+          <a href="#" class="trustpilot__p"
+            >4.7 de 5 estrellas basado en 76,526 reseñas Mostrando nuestras
+            reseñas de 4 y 5 estrellas.</a
+          >
         </div>
       </section>
+
+      <section class="section-mail">
+        <img
+          src="./assets/imgs/DomainUpdate.jpg"
+          alt="actualiza tu dominio imagen"
+          class="section-mail__img"
+        />
+        <small class="section-mail__small">Correo personalizado</small>
+        <h2 class="section-mail__h2">Construye tu éxito</h2>
+        <p class="section-mail__p">
+          Todos tienen un correo electrónico, pero no quiere decir que todos los
+          correos electrónicos sean iguales. Es nueve veces más probable que los
+          clientes elijan una empresa con una dirección de correo electrónico
+          profesional, como tunombre@NeueBloom.com.
+        </p>
+        <a href="#" class="section-mail__a">Consultar los planes de correo</a>
+
+        <!-- otra imagen -->
+
+        <img
+          src="./assets/imgs/latam-feat-hp-ssl.webp"
+          alt="actualiza tu dominio imagen"
+          class="section-mail__img"
+        />
+        <small class="section-mail__small">Seguridad SSL</small>
+        <h2 class="section-mail__h2">Protege tus datos y a tus clientes</h2>
+        <p class="section-mail__p">
+          Un certificado SSL protege los datos que entran y salen de tu sitio,
+          desde información personal hasta números de tarjeta de crédito. Y
+          cuando los visitantes se sienten seguros, es más probable que confíen
+          en tu negocio.
+        </p>
+        <a href="#" class="section-mail__a">Asegura tu sitio</a>
+        <small class="small-asegura">Revisa tu seguridad</small>
+
+        <!-- otra imagen -->
+        <img
+          src="./assets/imgs/img-feat-hosting.webp"
+          alt="actualiza tu dominio imagen"
+          class="section-mail__img"
+        />
+        <small class="section-mail__small">Hosting</small>
+        <h2 class="section-mail__h2">Rápido, seguro y siempre en línea</h2>
+        <p class="section-mail__p">
+          ¿Ya tienes un sitio web? Dale el lugar que se merece. Con tiempos de
+          carga líderes en la industria, tiempo de actividad garantizado 99.9 %
+          y asistencia técnica 24/7, tu sitio no puede pedir más.
+        </p>
+        <a href="#" class="section-mail__a">Ver planes de Web Hosting</a>
+      </section>
+
+      <section class="dominio-search">
+        <h2 class="dominio-search__h2">Todo empieza con un dominio</h2>
+        <p class="dominio-search__p"></p>
+        <div class="search-dmn">
+          <input
+            type="search"
+            class="search-dmn__input"
+            name="busca-dominio"
+            id="buscar-dominio"
+          />
+          <button class="search-dmn__button"></button>
+        </div>
+      </section>
+
+      <!-- section why -->
+
+      <section class="why">
+        <p class="why__name"><strong>Felicia G.</strong></p>
+        <p class="why__img-text">Guia de GoDaddy</p>
+        <picture class="why__pic">
+          <source
+            media="(min-width:800px)"
+            srcset="./assets/imgs/mrq-Guide-LATAM-Felicia-desktop.webp"
+          />
+          <img
+            src="./assets/imgs/Guide-LATAM-Felicia-portrait.webp"
+            alt="Flowers"
+            style="width: auto"
+          />
+        </picture>
+
+        <div class="why-guides">
+          <img
+            class="why-guides__logo"
+            src="./assets/svgs/svg-godaddy-guides.svg"
+            alt="godaddy logo guides"
+          />
+          <h2 class="why-guides__why">¿Por qué elegir a GoDaddy?</h2>
+          <p class="why-guides__p">
+            Porque sabemos que hasta la mejor tecnología necesita de la gente
+            más competente. Por eso, ofrecemos asistencia técnica telefónica de
+            expertos 24/7, entre muchas otras cosas.
+          </p>
+          <div class="assistence">
+            <p class="assistence__number">
+              Llama a nuestro equipo de asistencia técnica al (55) 8877 3680.
+            </p>
+            <button class="assistence__btn">Obtener ayuda</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- section marketing -->
+
+      <section class="sect-marketing">
+        <div class="sect-marketing__text">
+          <h2 class="sect-marketing__text--h2"></h2>
+          <p class="sect-marketing__text--p"></p>
+        </div>
+
+        <!--? acordion -->
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Cómo ayuda GoDaddy a los propietarios de pequeñas empresas para que
+            triunfen?
+          </h3>
+          <p class="marketing__acc--p">
+            En GoDaddy te ofrecemos más que una simple plataforma para crear tu
+            página web; te damos todo lo que necesitas para crear una presencia
+            en línea efectiva e inolvidable. ¿Ya tienes una página? Ofrecemos
+            planes de hosting que la mantendrán rápida y segura en línea.
+            Nuestro correo profesional te ayuda a reflejar una imagen
+            profesional y nuestras herramientas de marketing online empoderan a
+            los emprendedores para estar en línea con una página web optimizada
+            para SEO. GoDaddy es un proveedor de soluciones ‘todo en uno’ para
+            darle vida a tu idea en internet y cuenta con el respaldo de
+            expertos que ofrecen asistencia personalizada.
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué necesito un sitio web para mi negocio?
+          </h3>
+          <p class="marketing__acc--p">
+            Incluso las empresas pequeñas que solo brindan servicios a nivel
+            local necesitan una página. Esto es porque internet es el primer
+            lugar al que acuden las personas cuando buscan un producto o
+            servicio. Una página web ayuda a todas las empresas a:
+          </p>
+
+          <ul>
+            <li class="marketing__acc--li">
+              Promocionar y vender productos y servicios
+            </li>
+            <li class="marketing__acc--li">
+              Conectar con clientes nuevos (y conservar los que ya tienen)
+            </li>
+            <li class="marketing__acc--li">Construir credibilidad</li>
+            <li class="marketing__acc--li">
+              Competir con empresas más grandes
+            </li>
+            <li class="marketing__acc--li">
+              Controlar la marca y mantener el marketing al día
+            </li>
+          </ul>
+
+          <p class="marketing__acc--p">
+            Lo mejor de todo es que una página web es más sencilla y accesible
+            de lo que imaginas. GoDaddy te ofrece una selección completa de
+            herramientas online para crear páginas web, junto con las opciones
+            de hosting, correo electrónico y marketing para garantizar tu
+            crecimiento comercial en la web.
+          </p>
+        </div>
+
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué necesito un correo profesional?
+          </h3>
+          <p class="marketing__acc--p">
+            Hay muchas razones para cambiar tu correo electrónico gratis a un
+            correo con dominio propio, pero estas son las 3 principales:
+          </p>
+
+          <ol>
+            <li class="marketing__acc--li">
+              Es más probable que los clientes confíen en una dirección
+              profesional como lily@lilysbikes.com que
+              lilysbikestexas84@hotmail.com.
+            </li>
+            <li class="marketing__acc--li">
+              El Correo personalizado te brinda seguridad de primer nivel,
+              gracias a filtros que lideran la industria para evitar virus y
+              correos no deseados.
+            </li>
+            <li class="marketing__acc--li">
+              Las direcciones de correo personalizadas promocionan tu negocio de
+              manera más efectiva. Siempre que envíes un correo electrónico,
+              estarás proporcionando tu dirección web a tus clientes y
+              potenciales compradores. De este modo, los estarás alentando a que
+              visiten tu sitio web.
+            </li>
+          </ol>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué obtener un nombre de dominio de GoDaddy?
+          </h3>
+          <p class="marketing__acc--p">
+            GoDaddy es el registrador de dominio de confianza más grande del
+            mundo que posibilita que personas con ideas creativas igual que tú,
+            triunfen en línea. Comprar un nombre de dominio es fácil; con
+            nuestra herramienta de búsqueda de dominio y nuestras herramientas
+            de generador de nombres de dominio puedes encontrar la dirección
+            perfecta de sitio web para tu negocio.
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué usar el creador de páginas web de GoDaddy?
+          </h3>
+          <p class="marketing__acc--p">
+            Porque es una forma rápida y fácil de crear una página web con la
+            que tú y tus clientes estarán encantados. Simplemente escribe tu
+            idea o industria y el Creador de páginas web de GoDaddy te mostrará
+            plantillas con diseños profesionales que están listas para usarse.
+            Después, solo necesitas agregar tu propio texto e imágenes y estará
+            todo listo. El creador de páginas web tiene docenas de
+            funcionalidades, desde programación de citas en línea hasta un
+            sistema completo de comercio electrónico, con las cuales podrás
+            manejar las necesidades de tu empresa hoy y a medida que creces.
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Qué hace que el Web Hosting de GoDaddy sea líder mundial?
+          </h3>
+          <p class="marketing__acc--p">
+            Con casi 20 años en la industria, tenemos la experiencia, la
+            tecnología y los expertos en hosting para ayudar a los diseñadores
+            web, desarrolladores, blogueros y empresas en línea a crear y
+            mantener su presencia. Nuestra plataforma de web hosting, segura y
+            completa con cPanel, ofrece una garantía de 99.9 % tiempo de
+            actividad y asistencia técnica de primer nivel y ha ayudado a casi
+            21+ millones de clientes a estar en línea.
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué elegir GoDaddy para tener WordPress?
+          </h3>
+          <p class="marketing__acc--p">
+            GoDaddy ofrece planes confiables y accesibles de hosting WordPress y
+            hosting de WooCommerce, además de instalaciones con un clic y la
+            versión más reciente para que tengas disponibles las últimas
+            funcionalidades para tu sitio. El contenido de tu página web se
+            administra desde un lugar; tienes una variedad de temas a tu
+            disposición y complementos que te dan opciones ilimitadas para
+            triunfar.
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Qué es la opción de pago a plazos?
+          </h3>
+          <p class="marketing__acc--p">
+            Con nuestra nueva opción de pago, puedes adquirir tus productos de
+            GoDaddy en 7 plazos. Busca la opción de pago a plazos al finalizar
+            tu compra en el carrito. Las opciones de pago a plazos están
+            disponibles a través de tu banco emisor (con intereses) y solo se
+            aplican al plazo del producto seleccionado.&nbsp
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué transferir mi dominio, web hosting o sitio web a GoDaddy?
+          </h3>
+          <p class="marketing__acc--p">
+            Hay varias razones: nuestra asistencia técnica siempre está en
+            primer lugar cuando investigamos los motivos por los que las
+            personas cambian su presencia online a GoDaddy. Por supuesto que los
+            precios son otro motivador, incluyendo la extensión gratuita por un
+            año para las transferencias de varios dominios. Y si ya tienes uno o
+            más de nuestros productos, la transferencia de tu dominio, página
+            web o hosting te permitirá consolidar tu presencia en la web con un
+            solo proveedor, para que todo sea más fácil de administrar.
+          </p>
+        </div>
+        <div class="sect-marketing__acc acordion">
+          <h3 class="marketing__acc--h2">
+            ¿Por qué usar el Creador de logos de GoDaddy?
+          </h3>
+          <p class="marketing__acc--p">
+            Con el Creador de logos de GoDaddy es fácil crear un logotipo
+            personalizado que te ayudará a definir la personalidad de tu marca y
+            transformará tu negocio. Desde marcas hasta logotipos, hay cientos
+            de plantillas para elegir. O puedes diseñar el tuyo en cuestión de
+            minutos. No se necesitan conocimientos de diseño.
+          </p>
+        </div>
+      </section>
+
+      <!-- another section (legal) -->
+
+      <section class="legal-one">
+        <a href="#"
+          ><small
+            >*,+,** Ver limitaciones y politicas legales sobre productos</small
+          ></a
+        >
+
+        <p class="legal-one__disclaimer">
+          Los logos y las marcas de terceros son marcas comerciales registradas
+          de sus respectivos propietarios. Todos los derechos reservados.
+        </p>
+
+        <div class="get-help">
+          <p class="get-help__p">
+            Obtén la ayuda que necesitas 24/7. Llama a nuestros Guías expertos
+            al (55) 8877 3680. Estamos a tu disposición para ayudarte en cada
+            paso del proceso.
+          </p>
+        </div>
+      </section>
+
+      <!-- footer -->
+
+      <footer class="footer">
+        <div class="footer-logo">
+          <p class="footer-logo__p"></p>
+          <img
+            src="./assets/svgs/svg-godaddy-guides-negative.svg"
+            alt="logo with guides in the footer"
+          />
+        </div>
+
+        <!--? second section of the footer -->
+        <div class="acc-about about">
+          <!-- 1 -->
+          <p class="acordion about__p">Acerca de GoDaddy</p>
+          <a href="" class="about__a">La empresa</a>
+          <a href="" class="about__a">Empleo</a>
+          <a href="" class="about__a">Comunícate con nosotros</a>
+          <a href="" class="about__a">Blog de GoDaddy</a>
+          <a href="" class="about__a">Legal</a>
+          <a href="" class="about__a">Redacción</a>
+          <a href="" class="about__a">Centro de confianza</a>
+          <!-- 2 -->
+          <p class="acordion about__p">Asistencia tecnica</p>
+          <a href="" class="about__a">Asistencia técnica para productos</a>
+          <a href="" class="about__a">Reportar abusos</a>
+          <a href="" class="about__a">Recursos</a>
+          <!-- 3 -->
+          <p class="acordion about__p">Recursos</p>
+          <a href="" class="about__a">Webmail</a>
+          <a href="" class="about__a">WHOIS</a>
+          <a href="" class="about__a">Confirmación ICANN</a>
+          <a href="" class="about__a">Diseñadores y desarrolladores</a>
+          <a href="" class="about__a">Catálogo de productos</a>
+          <a href="" class="about__a">Generador de nombre comercial</a>
+          <!-- 4 -->
+          <p class="acordion about__p">Programa de socios</p>
+          <a href="" class="about__a">Afiliados</a>
+          <a href="" class="about__a">Programa de revendedores</a>
+          <a href="" class="about__a">GoDaddy Pro</a>
+          <!-- 5 -->
+          <p class="acordion about__p">Cuenta</p>
+          <a href="" class="about__a">Mis productos</a>
+          <a href="" class="about__a">Renovaciones y facturación</a>
+          <a href="" class="about__a">Crear cuenta</a>
+          <!-- 6 -->
+          <p class="acordion about__p">Compras</p>
+          <a href="" class="about__a">Comprar un dominio</a>
+          <a href="" class="about__a">Sitios web</a>
+          <a href="" class="about__a">WordPress</a>
+          <a href="" class="about__a">Hosting</a>
+          <a href="" class="about__a">Seguridad de páginas web</a>
+          <a href="" class="about__a">Correo electrónico y Office</a>
+
+          <!--Logo-->
+          <img src="./assets/svgs/svg-logo-small.svg" alt="logo de godaddy" />
+        </div>
+
+        <!--? third section  -->
+        <div class="footer-legal">
+          <div class="hmbg-menus">
+            <p class="hmbg-menus__p">Mexico - Español</p>
+            <p class="hmbg-menus__p">MXN MXN</p>
+          </div>
+          <div class="social">
+            <img src="" alt="Facebook link" class="social__logos" /><img
+              src=""
+              alt="Twitter link"
+              class="social__logos"
+            /><img src="" alt="Youtube link" class="social__logos" />
+          </div>
+        </div>
+        <div class="legal">
+          <p class="legal__p">Legal</p>
+          <p class="legal__p">Politica de privacidad</p>
+          <p class="legal__p">Cookies</p>
+        </div>
+
+        <div class="copy">
+          <p class="copy__p">
+            Copyright © 1999 - 2023 GoDaddy Operating Company, LLC. Todos los
+            derechos reservados. La marca GoDaddy es una marca registrada de
+            GoDaddy Operating Company, LLC en los EE. UU. y otros países. El
+            logo "GO" es una marca comercial registrada de GoDaddy.com, LLC en
+            los EE.UU.
+          </p>
+          <p class="copy__p">
+            El uso de este sitio está sujeto a las condiciones de uso expresas.
+            Al utilizar este sitio, tú indicas que aceptas cumplir con estos
+            Términos universales de servicio.
+          </p>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
