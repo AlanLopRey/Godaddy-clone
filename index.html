@@ -46,69 +46,116 @@
       <!--* header -->
       <header class="header">
         <div class="input-wrapper">
-          <input class="header__inpt" type="search" name="dominio" id="" />
+          <input
+            class="header__inpt"
+            type="search"
+            name="dominio"
+            id="input-search"
+            placeholder="Escribe el dominio que deseas"
+          />
           <button class="header__inpt--btn">
             <img src="./assets/svgs/svg-search-logo.svg" alt="" />
           </button>
+
+          <div class="price-logos">
+            <div class="logos-wrapper">
+              <img
+                src="./assets/svgs/svg-online.svg"
+                alt=""
+                class="price-logos__img"
+              />
+              <p class="price-logos__p">MXN16.84*</p>
+            </div>
+            <div class="logos-wrapper">
+              <img
+                src="./assets/svgs/svg-mx.svg"
+                alt=""
+                class="price-logos__img"
+              />
+              <p class="price-logos__p">MXN399.99</p>
+            </div>
+            <div class="logos-wrapper">
+              <img
+                src="./assets/svgs/svg-tv.svg"
+                alt=""
+                class="price-logos__img"
+              />
+              <p class="price-logos__p">MXN850.17</p>
+            </div>
+
+            <div class="logos-wrapper day">
+              <img
+                src="./assets/svgs/svg-day-tiny.svg"
+                alt=""
+                class="price-logos__img"
+              />
+              <p class="price-logos__p">MXN271.94*</p>
+            </div>
+          </div>
         </div>
 
         <!--? hero img -->
-        <div class="hero">
-          <p class="hero__p">Páginas web + Marketing</p>
-          <h1 class="hero__p">Construir tu página web es muy fácil</h1>
-          <img src="./assets/imgs/mobile-portrait.jpg" alt="" />
-          <small class="hero__small"
-            >Sin cargo, sin obligación, sin tener que cancelar nada.**</small
-          >
-        </div>
       </header>
-
-      <article class="article-precios">
-        <div class="nombres-dominios">
-          <p class="nombre-dominios__p">Nombres de dominios</p>
-          <h2 class="nombre-dominios__h2">
-            Obtén un .com por MXN0.01*/primer año
-          </h2>
-          <p class="nombre-dominios__p">
-            Compra de tres años obligatoria. Año(s) adicional(es) MXN399.99*
-          </p>
-          <a href="#" class="nombre-dominios__a">Encuentra tu dominio</a>
+      <div class="hero-wrapper">
+        <div class="hero">
+          <div class="hero-text">
+            <p class="hero__p">Páginas web + Marketing</p>
+            <h1 class="hero__h1">Construir tu página web es muy fácil</h1>
+            <a href="#" class="hero__a">Comienza gratis</a>
+            <small class="hero__small"
+              >Sin cargo, sin obligación, sin tener que cancelar nada.**</small
+            >
+          </div>
         </div>
-
-        <div class="precios-grid">
-          <div class="precios-grid__grids grid-1">
-            <p class="grid-p">Obten un .com a MXN0.01/1er año</p>
-          </div>
-          <div class="precios-grid__grids grid-2">
-            <p class="grid-p">.mx MXN399.99/año</p>
-          </div>
-          <div class="precios-grid__grids grid-3">
-            <p class="grid-p">Seguridad SSL MXN999.99/año</p>
-          </div>
-          <div class="precios-grid__grids grid-4">
-            <p class="grid-p">Web hosting MXN42.99/mes</p>
-          </div>
-          <div class="precios-grid__grids grid-5">
-            <p class="grid-p"></p>
-            Correo personalizado MXN29.99 por usuario/mes
-          </div>
-          <div class="precios-grid__grids grid-6">
-            <p class="grid-p">WordPress MXN79.99/mes</p>
-          </div>
-          <div class="precios-grid__grids grid-7">
-            <p class="grid-p">Microsoft 365 MXN39.99/mes</p>
-          </div>
-          <div class="precios-grid__grids grid-8">
-            <p class="grid-p">Prueba gratis del Creador de paginas web</p>
-          </div>
-          <div class="precios-grid__grids grid-9">
-            <p class="grid-p">
-              <span class="grid-p__span">.ai</span>MXN 1,020.24/primer año,
-              duracion de 2 años. .ai es el futuro
+        <article class="article-precios">
+          <div class="nombres-dominios">
+            <p class="nombre-dominios__p">Nombres de dominios</p>
+            <h2 class="nombre-dominios__h2">
+              Obtén un .com por MXN0.01*/primer año
+            </h2>
+            <p class="nombre-dominios__p">
+              Compra de tres años obligatoria. Año(s) adicional(es) MXN399.99*
             </p>
+            <a href="#" class="nombre-dominios__a">Encuentra tu dominio</a>
           </div>
+        </article>
+      </div>
+
+      <!--! precios -->
+
+      <div class="precios-grid">
+        <div class="precios-grid__grids grid-1">
+          <p class="grid-p">Obten un .com a MXN0.01/1er año</p>
         </div>
-      </article>
+        <div class="precios-grid__grids grid-2">
+          <p class="grid-p">.mx MXN399.99/año</p>
+        </div>
+        <div class="precios-grid__grids grid-3">
+          <p class="grid-p">Seguridad SSL MXN999.99/año</p>
+        </div>
+        <div class="precios-grid__grids grid-4">
+          <p class="grid-p">Web hosting MXN42.99/mes</p>
+        </div>
+        <div class="precios-grid__grids grid-5">
+          <p class="grid-p"></p>
+          Correo personalizado MXN29.99 por usuario/mes
+        </div>
+        <div class="precios-grid__grids grid-6">
+          <p class="grid-p">WordPress MXN79.99/mes</p>
+        </div>
+        <div class="precios-grid__grids grid-7">
+          <p class="grid-p">Microsoft 365 MXN39.99/mes</p>
+        </div>
+        <div class="precios-grid__grids grid-8">
+          <p class="grid-p">Prueba gratis del Creador de paginas web</p>
+        </div>
+        <div class="precios-grid__grids grid-9">
+          <p class="grid-p">
+            <span class="grid-p__span">.ai</span>MXN 1,020.24/primer año,
+            duracion de 2 años. .ai es el futuro
+          </p>
+        </div>
+      </div>
 
       <!--* carousel -->
       <section class="reviews">
