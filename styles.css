@@ -375,6 +375,10 @@ body {
     color: var(--gray);
   }
 
+  .nombres-dominios {
+    margin-bottom: 0;
+  }
+
   .logos-wrapper {
     display: flex;
     align-items: center;
@@ -414,11 +418,13 @@ body {
     height: 35vw;
     width: 35%;
     flex-direction: column;
+    margin-bottom: 0;
   }
   .nombres-dominios {
     margin-right: 0;
     padding: 0 1rem;
     width: 100%;
+    margin-bottom: 0;
   }
 
   .nombre-dominios__a {
