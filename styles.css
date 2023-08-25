@@ -173,7 +173,7 @@ body {
 .hero {
   /* position: relative; */
   width: 90%;
-  height: 70vh;
+  height: 95vh;
   background-image: url(./assets/imgs/mobile-portrait.jpg);
   background-size: cover;
   display: flex;
@@ -198,6 +198,7 @@ body {
   margin-bottom: 1rem;
 }
 .hero__h1 {
+  width: 90%;
   font-size: 2rem;
   font-family: var(--font-header);
   font-family: var(--font-header-two);
@@ -243,7 +244,7 @@ body {
   justify-content: space-evenly;
   text-align: center;
   width: 90%;
-  height: 50vh;
+  height: 70vh;
   background-color: var(--darker-black);
   color: var(--backgrund-white);
   margin-bottom: 1rem;
