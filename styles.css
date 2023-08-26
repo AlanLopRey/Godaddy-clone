@@ -372,6 +372,7 @@ body {
 .carousel-rvw__img {
   width: 100vw;
   max-width: 50vw;
+  pointer-events: none;
 }
 @media screen and (min-width: 770px) {
   .hero {
