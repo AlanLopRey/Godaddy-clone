@@ -12,6 +12,8 @@
   /* Abhaya Libre  || Regular 400 SemiBold 600 Bold 700 ExtraBold 800  */
   --font-header: "Abhaya Libre", serif;
   --font-header-two: "DM Serif Display", serif;
+
+  /*100 300 500 600 700*/
   --font-body: "Work Sans", sans-serif;
 }
 
@@ -265,7 +267,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: var(--font-body);
-  /* color: var(--backgrund-white); */
+  color: var(--darker-black);
   text-decoration: none;
   width: 85%;
   height: 3rem;
@@ -282,6 +284,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   margin-left: 5%;
   margin-right: 5%;
+  margin-top: 1rem;
   border: 1px solid var(--input-color);
 }
 
@@ -291,21 +294,50 @@ body {
 }
 
 .precios-grid__grids {
-  border: 2px solid var(--input-color);
+  position: relative;
+  border: 1px solid var(--input-color);
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0 1rem;
+}
+
+.grid-p {
+  text-align: center;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.not-working-p {
+  text-align: center;
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.precios-grid__grids::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-image: url(./assets/svgs/svg-arrow-right-small.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
 }
 
 .precios-grid__grids:hover {
-  background-image: url(./assets/svgs/svg-arrow-right-small.svg);
-  background-repeat: no-repeat;
+  background-color: var(--darker-black);
+  color: var(--backgrund-white);
 }
-.grid-p {
-  text-align: center;
+.grid-9__img {
+  filter: grayscale(0) invert(1);
+  mix-blend-mode: difference;
+  width: 5rem;
 }
 
 .carousel {
