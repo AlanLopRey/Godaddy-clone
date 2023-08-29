@@ -419,7 +419,7 @@ body {
   font-family: var(--font-header-two);
 }
 .section-mail__p {
-  font-size: 0.7rem;
+  font-size: 1.2rem;
   font-family: var(--font-body);
 }
 .section-mail__a {
@@ -429,7 +429,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 2rem;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-family: var(--font-body);
   text-decoration: none;
   border: 2px solid var(--darker-black);
@@ -441,10 +441,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 75vh;
+  width: 100%;
+  height: 65vh;
   background-color: var(--light-blue);
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .dominio-search__h2 {
@@ -455,7 +455,7 @@ body {
 }
 
 .dominio-search__p {
-  width: 24rem;
+  width: 90%;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1rem;
@@ -464,6 +464,89 @@ body {
 
 .search-dmn__button {
   background-color: var(--darker-black);
+}
+
+.why {
+  height: 120vw;
+  position: relative;
+}
+
+.why__img {
+  position: absolute;
+  z-index: -10;
+}
+
+.why {
+  background-image: url(./assets/imgs/Guide-LATAM-Felicia-portrait.webp);
+  /* background-position: 40%; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 125vh;
+}
+
+.text-why-wrapper {
+  width: 10rem;
+  position: relative;
+  z-index: 10;
+  top: 1rem;
+  left: 2rem;
+  height: 5rem;
+}
+.why-guides {
+  position: relative;
+  top: 45vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.why-guides__logo {
+  width: 10rem;
+}
+.why-guides__why {
+  font-size: 2.24rem;
+  font-family: var(--font-header-two);
+}
+.why-guides__p {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+}
+.assistence {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+}
+.assistence__number {
+}
+.assistence__btn {
+  margin-top: 1rem;
+  background-color: var(--darker-black);
+  color: var(--backgrund-white);
+  width: 15rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+}
+
+.assistence__btn:hover {
+  cursor: pointer;
+}
+
+.sect-marketin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sect-marketing__text {
+}
+.sect-marketing__text--h2 {
+}
+.sect-marketing__text--p {
+}
+
+.marketing__acc--p {
+  display: none;
 }
 
 @media screen and (min-width: 770px) {
@@ -492,6 +575,30 @@ body {
     width: 100vw;
     max-width: 30vw;
     pointer-events: none;
+  }
+
+  .why {
+    background-image: url(./assets/imgs/mrq-Guide-LATAM-Felicia-desktop.webp);
+    background-position: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .text-why-wrapper {
+    position: relative;
+    top: 4vw;
+  }
+
+  .why-guides {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vw;
+    top: 7vw;
+    left: 12vw;
+    width: 35vw;
+    height: 65vh;
   }
 }
 
@@ -540,6 +647,15 @@ body {
 
   .section-mail {
     grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+  }
+
+  .search-dmn {
+    align-self: center;
+    justify-content: center;
+  }
+
+  .why {
+    height: 70vw;
   }
 }
 
@@ -681,6 +797,10 @@ body {
   .section-mail__small {
     font-family: var(--font-body);
     font-size: 0.8rem;
+  }
+
+  .why {
+    height: 55vw;
   }
 }
 
