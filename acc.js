@@ -1,8 +1,8 @@
 const d = document;
-const btn = d.getElementsByClassName("marketing__acc--h2");
-const p = d.getElementsByClassName("marketing__acc--p");
+const btn = d.getElementsByClassName("acordion");
+const accWrapper = d.getElementsByClassName("acc-wrapper");
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function () {
-    p[i].classList.toggle("active");
+    accWrapper[i].classList.toggle("active");
   });
 }

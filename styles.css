@@ -559,18 +559,24 @@ body {
 
 .sect-marketing__acc {
   text-align: start;
-  width: 90vw;
+  min-width: 10rem;
+  max-width: 26rem;
   min-height: 20vh;
+  margin-left: 9%;
+  margin-right: 9%;
 }
 
 .marketing__acc--h2 {
   position: relative;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .marketing__acc--h2::before {
   content: "";
   position: absolute;
-  top: -30px;
+  /* top: -30px; */
   left: 0;
   width: 100%;
   height: 2px;
@@ -578,13 +584,19 @@ body {
 }
 
 .marketing__acc--p {
-  display: none;
   font-family: var(--font-body);
   font-size: 1.1rem;
 }
 
+.acc-wrapper {
+  height: 0;
+  overflow: hidden;
+}
+
 .active {
-  display: block;
+  height: auto;
+  overflow: auto;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 770px) {
