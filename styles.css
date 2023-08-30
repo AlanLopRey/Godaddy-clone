@@ -550,7 +550,8 @@ body {
 
 .sect-marketing__text--h2 {
   font-family: var(--font-header-two);
-  font-size: 2.2rem;
+  font-size: 2.4rem;
+  max-width: 29rem;
 }
 .sect-marketing__text--p {
   font-family: var(--font-body);
@@ -560,7 +561,7 @@ body {
 .sect-marketing__acc {
   text-align: start;
   min-width: 10rem;
-  max-width: 26rem;
+  max-width: 29rem;
   min-height: 20vh;
   margin-left: 9%;
   margin-right: 9%;
@@ -571,6 +572,7 @@ body {
   font-family: var(--font-body);
   font-size: 1.5rem;
   font-weight: 600;
+  margin-top: 4rem;
 }
 
 .marketing__acc--h2::before {
@@ -586,6 +588,7 @@ body {
 .marketing__acc--p {
   font-family: var(--font-body);
   font-size: 1.1rem;
+  margin-bottom: 3rem;
 }
 
 .acc-wrapper {
@@ -597,6 +600,111 @@ body {
   height: auto;
   overflow: auto;
   margin-top: 1rem;
+}
+
+.legal-one {
+}
+
+.legal-one__a {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  color: var(--darker-black);
+  margin: 1rem 1rem;
+}
+
+.legal-one__disclaimer {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.get-help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--input-color);
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  height: 15rem;
+}
+
+.get-help__p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.footer {
+  background-color: var(--darker-black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.footer-logo__p {
+  color: var(--gray-black);
+  font-size: 7vw;
+  cursor: pointer;
+}
+
+.footer-logo {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.footer-logo::after {
+  content: "";
+  position: absolute;
+  bottom: -1.375rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--backgrund-white);
+}
+
+.footer-logo-two {
+  filter: grayscale(0) invert(1);
+  width: 11rem;
+}
+
+.about {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  bottom: -1.375rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--backgrund-white);
+}
+
+.acordion {
+  cursor: pointer;
+}
+
+.about__p {
+  margin-bottom: 1rem;
+}
+
+.acc-wrapper {
+}
+
+.about__a {
+  display: block;
+  color: var(--gray);
+  margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 770px) {
