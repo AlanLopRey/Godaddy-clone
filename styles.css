@@ -631,6 +631,8 @@ body {
   font-family: var(--font-body);
   font-size: 1.5rem;
   height: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .get-help__p {
