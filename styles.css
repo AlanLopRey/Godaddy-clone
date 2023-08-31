@@ -104,12 +104,15 @@ body {
 }
 
 .hamburger {
-  width: 4rem;
+  width: 5rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 .hamburger__logo {
   position: relative;
-  left: 4rem;
+  left: 2rem;
+  font-size: 1.5rem;
 }
 
 .icons {
@@ -728,6 +731,7 @@ body {
 }
 
 .social {
+  font-size: 1.5rem;
   display: flex;
   width: 95%;
   justify-content: space-evenly;
@@ -861,6 +865,11 @@ body {
 
   .why {
     height: 70vw;
+  }
+
+  .footer-logo__p {
+    font-size: 5vw;
+    margin-bottom: 1rem;
   }
 }
 
